@@ -68,3 +68,63 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+###############################Tailwind##########################################
+[*] Install Tailwind
+
+(base) PS C:\IMDB clone\imdb-clone> npm install @headlessui/react @heroicons/react
+
+added 3 packages, and audited 1535 packages in 10s
+
+246 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+(base) PS C:\IMDB clone\imdb-clone> npm install -D tailwindcss
+
+up to date, audited 1535 packages in 4s
+
+246 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+(base) PS C:\IMDB clone\imdb-clone> npx tailwindcss init
+
+Created Tailwind CSS config file: tailwind.config.js
+(base) PS C:\IMDB clone\imdb-clone> 
+
+
+Configure:
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+Add in index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+tailwind cheatsheet:https://nerdcave.com/tailwind-cheat-sheet
+
